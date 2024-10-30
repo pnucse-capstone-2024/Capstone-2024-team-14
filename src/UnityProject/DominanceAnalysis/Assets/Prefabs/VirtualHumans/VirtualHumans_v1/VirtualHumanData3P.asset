@@ -1,0 +1,362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec7428020326ee4591df59261fcfc92, type: 3}
+  m_Name: VirtualHumanData3P
+  m_EditorClassIdentifier: 
+  greetingAudio: {fileID: 8300000, guid: 35930e27e99a054469cef9916cd81e15, type: 3}
+  farewellAudio: {fileID: 8300000, guid: 3585f73b827f2d2459469ac1d30b82e7, type: 3}
+  monologueAudio: {fileID: 8300000, guid: 05a5ce69c6b8a2744998997f3dd3287f, type: 3}
+  monologueGestures:
+  - word_or_phrase: 
+    gesture: Thoughtful_Head_Nod
+    start: 1.32
+  - word_or_phrase: 
+    gesture: Head_Tilt
+    start: 2.68
+  - word_or_phrase: 
+    gesture: Lengthy_Head_Nod
+    start: 6.1
+  - word_or_phrase: 
+    gesture: Head_Gesture
+    start: 10
+  - word_or_phrase: 
+    gesture: Thoughtful_Head_Nod
+    start: 14.46
+  - word_or_phrase: 
+    gesture: Head_Nod
+    start: 19.52
+  - word_or_phrase: 
+    gesture: Head_Tilt
+    start: 21.36
+  - word_or_phrase: 
+    gesture: Head_Gesture
+    start: 26
+  - word_or_phrase: 
+    gesture: Thoughtful_Head_Nod
+    start: 37.8
+  - word_or_phrase: 
+    gesture: Thoughtful_Head_Shake
+    start: 44.2
+  - word_or_phrase: 
+    gesture: Head_Nod
+    start: 50.38
+  - word_or_phrase: 
+    gesture: Lengthy_Head_Nod
+    start: 54
+  - word_or_phrase: 
+    gesture: Thoughtful_Head_Nod
+    start: 61.3
+  questionAnswerPairs:
+  - userQuestion: "\uB0B4\uC77C \uBE44\uAC00 \uC628\uB2E4\uB294\uB370 \uC2E4\uB0B4\uC5D0\uC11C
+      \uD560 \uB9CC\uD55C \uD65C\uB3D9 \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uB0B4\uC77C \uBE44\uAC00 \uC628\uB2E4\uBA74 \uC2E4\uB0B4\uC5D0\uC11C
+      \uD560 \uC218 \uC788\uB294 \uD65C\uB3D9\uC73C\uB85C \uC601\uD654 \uAC10\uC0C1\uC774\uB098
+      \uCE74\uD398\uC5D0\uC11C \uCC45 \uC77D\uAE30, \uC544\uB2C8\uBA74 \uC2E4\uB0B4
+      \uC2A4\uD3EC\uCE20 \uAC19\uC740 \uBCFC\uB9C1\uC774\uB098 \uC2E4\uB0B4 \uD074\uB77C\uC774\uBC0D\uC740
+      \uC5B4\uB5A0\uC138\uC694?"
+    virtualHumanQuestion: "\uC6B4\uB3D9\uC744 \uC88B\uC544\uD558\uC2DC\uB098\uC694?
+      \uC88B\uC544\uD558\uC2E0\uB2E4\uBA74, \uC5B4\uB5A4 \uC6B4\uB3D9\uC744 \uC990\uAE30\uC2DC\uB294\uC9C0
+      \uC54C\uACE0 \uC2F6\uC5B4\uC694."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.7
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 3.7
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 5.6
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 2.1
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 3.4
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 4.2
+  - userQuestion: "\uCE5C\uAD6C \uC0DD\uC77C \uC120\uBB3C\uB85C \uBB34\uC5C7\uC744
+      \uC0AC\uBA74 \uC88B\uC744\uC9C0 \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uCE5C\uAD6C \uC0DD\uC77C \uC120\uBB3C\uB85C\uB294 \uCDE8\uD5A5\uC5D0
+      \uB530\uB77C \uB2E4\uB974\uACA0\uC9C0\uB9CC, \uC608\uB97C \uB4E4\uC5B4 \uCC45\uC774\uB098
+      \uD5A5\uC218, \uC544\uB2C8\uBA74 \uC88B\uC544\uD558\uB294 \uBE0C\uB79C\uB4DC\uC758
+      \uC561\uC138\uC11C\uB9AC \uAC19\uC740 \uAC74 \uC5B4\uB5A8\uAE4C\uC694?"
+    virtualHumanQuestion: "\uBBF8\uB798\uC5D0 \uB3C4\uC804\uD574\uBCF4\uACE0 \uC2F6\uC740
+      \uC77C\uC774 \uC788\uC73C\uC2E0\uAC00\uC694? \uADF8\uB9AC\uACE0 \uADF8 \uC774\uC720\uB294
+      \uBB34\uC5C7\uC778\uAC00\uC694?"
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 3.7
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 4.2
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 6.6
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1.6
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.9
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 4
+  - userQuestion: "\uC9D1\uC5D0\uC11C \uD560 \uC218 \uC788\uB294 \uAC04\uB2E8\uD55C
+      \uC6B4\uB3D9 \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uC9D1\uC5D0\uC11C \uD560 \uC218 \uC788\uB294 \uAC04\uB2E8\uD55C
+      \uC6B4\uB3D9\uC73C\uB85C\uB294 \uC2A4\uD2B8\uB808\uCE6D\uC774\uB098 \uC694\uAC00,
+      \uC544\uB2C8\uBA74 \uAC04\uB2E8\uD55C \uADFC\uB825 \uC6B4\uB3D9 \uAC19\uC740
+      \uC2A4\uCFFC\uD2B8\uB098 \uD478\uC2DC\uC5C5\uC740 \uC5B4\uB5A0\uC138\uC694?"
+    virtualHumanQuestion: "\uC5EC\uAC00 \uC2DC\uAC04\uC5D0\uB294 \uBCF4\uD1B5 \uC5B4\uB5A4
+      \uD65C\uB3D9\uC744 \uD558\uC2DC\uB098\uC694?"
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.3
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 3
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 5.5
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 6.1
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1
+    - word_or_phrase: 
+      gesture: Head_Gesture
+      start: 2.2
+  - userQuestion: "\uC2A4\uD2B8\uB808\uC2A4 \uD574\uC18C\uD558\uB294 \uBC29\uBC95
+      \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uC2A4\uD2B8\uB808\uC2A4\uB97C \uD574\uC18C\uD558\uB294
+      \uBC29\uBC95\uC73C\uB85C\uB294 \uBA85\uC0C1\uC774\uB098 \uC0B0\uCC45, \uC544\uB2C8\uBA74
+      \uC88B\uC544\uD558\uB294 \uC74C\uC545\uC744 \uB4E3\uB294 \uAC83\uB3C4 \uC88B\uACE0,
+      \uCDE8\uBBF8 \uD65C\uB3D9\uC5D0 \uBAB0\uB450\uD558\uB294 \uAC83\uB3C4 \uC88B\uC740
+      \uBC29\uBC95\uC774\uC5D0\uC694."
+    virtualHumanQuestion: "\uC874\uACBD\uD558\uB294 \uC778\uBB3C\uC774 \uC788\uC73C\uC2E0\uAC00\uC694?
+      \uADF8 \uC778\uBB3C\uC744 \uC65C \uC874\uACBD\uD558\uC2DC\uB294\uC9C0\uB3C4
+      \uD568\uAED8 \uB9D0\uC500\uD574\uC8FC\uC2DC\uBA74 \uC88B\uACA0\uC5B4\uC694."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.1
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 2.7
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 3.9
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 6.1
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1.1
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.4
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 3.3
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 4.6
+  - userQuestion: "\uAC74\uAC15\uC5D0 \uC88B\uC740 \uC74C\uC2DD\uC774\uB098 \uC2DD\uB2E8
+      \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uAC74\uAC15\uC5D0 \uC88B\uC740 \uC74C\uC2DD\uC73C\uB85C\uB294
+      \uC2E0\uC120\uD55C \uCC44\uC18C\uC640 \uACFC\uC77C, \uACE0\uB2E8\uBC31 \uC2DD\uD488\uC778
+      \uB2ED\uAC00\uC2B4\uC0B4\uC774\uB098 \uC0DD\uC120, \uADF8\uB9AC\uACE0 \uD1B5\uACE1\uBB3C
+      \uAC19\uC740 \uD604\uBBF8\uB098 \uADC0\uB9AC\uAC00 \uC88B\uC544\uC694. \uADE0\uD615
+      \uC7A1\uD78C \uC2DD\uB2E8\uC744 \uC720\uC9C0\uD558\uB294 \uAC83\uC774 \uC911\uC694\uD574\uC694."
+    virtualHumanQuestion: "\uC0B0\uACFC \uBC14\uB2E4 \uC911 \uC5B4\uB290 \uCABD\uC744
+      \uB354 \uC88B\uC544\uD558\uC2DC\uB098\uC694? \uADF8 \uC774\uC720\uAC00 \uAD81\uAE08\uD569\uB2C8\uB2E4."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 1.6
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 3.4
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 6.5
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 9.2
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1.2
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 3.4
+  - userQuestion: "\uC0C8\uB85C\uC6B4 \uCDE8\uBBF8\uB97C \uC2DC\uC791\uD558\uB824\uB294\uB370
+      \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uC0C8\uB85C\uC6B4 \uCDE8\uBBF8\uB85C\uB294 \uADF8\uB9BC
+      \uADF8\uB9AC\uAE30\uB098 \uC545\uAE30 \uC5F0\uC8FC, \uC544\uB2C8\uBA74 \uC694\uB9AC\uB098
+      \uBCA0\uC774\uD0B9 \uAC19\uC740 \uAC83\uB3C4 \uC88B\uC744 \uAC83 \uAC19\uC544\uC694.
+      \uB610\uB294 \uC6B4\uB3D9\uC744 \uC88B\uC544\uD558\uC2E0\uB2E4\uBA74 \uC694\uAC00\uB098
+      \uB2EC\uB9AC\uAE30\uB3C4 \uCD94\uCC9C\uB4DC\uB824\uC694."
+    virtualHumanQuestion: "\uAC00\uC7A5 \uC88B\uC544\uD558\uB294 \uB178\uB798\uAC00
+      \uC788\uB2E4\uBA74, \uADF8 \uB178\uB798\uB97C \uCD94\uCC9C\uD574\uC8FC\uC2E4
+      \uC218 \uC788\uB098\uC694? \uC774\uC720\uB3C4 \uD568\uAED8 \uB9D0\uC500\uD574\uC8FC\uC2DC\uBA74
+      \uC88B\uACA0\uC5B4\uC694."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 1.6
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 2.5
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 4
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 8.9
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1.3
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 2.2
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 4.7
+  - userQuestion: "\uB0B4\uC77C \uC810\uC2EC \uC911\uC2DD\uACFC \uC77C\uC2DD \uC911\uC5D0
+      \uBB58 \uBA39\uC744 \uC9C0 \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uB0B4\uC77C \uC810\uC2EC\uC73C\uB85C \uC911\uC2DD\uACFC
+      \uC77C\uC2DD \uC911\uC5D0 \uC120\uD0DD\uD558\uAE30 \uC5B4\uB835\uB2E4\uBA74,
+      \uC911\uC2DD\uC758 \uB2E4\uC591\uD55C \uB9DB\uC744 \uC990\uAE38 \uC218 \uC788\uB294
+      \uC9DC\uC7A5\uBA74\uC774\uB098 \uD0D5\uC218\uC721, \uC544\uB2C8\uBA74 \uC77C\uC2DD\uC758
+      \uC2E0\uC120\uD55C \uB9DB\uC744 \uB290\uB084 \uC218 \uC788\uB294 \uCD08\uBC25\uC774\uB098
+      \uB77C\uBA58\uC740 \uC5B4\uB5A0\uC138\uC694?"
+    virtualHumanQuestion: "\uC5B4\uB5A4 \uACC4\uC808\uC744 \uAC00\uC7A5 \uC88B\uC544\uD558\uC2DC\uB098\uC694?
+      \uADF8\uB9AC\uACE0 \uC65C \uADF8 \uACC4\uC808\uC744 \uC88B\uC544\uD558\uC2DC\uB294\uC9C0
+      \uB9D0\uC500\uD574\uC8FC\uC2DC\uBA74 \uC88B\uACA0\uC5B4\uC694."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 6.1
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 6.9
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 10.1
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 10.6
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 0.9
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 3.1
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 4.5
+  - userQuestion: "\uC774\uBC88 \uC8FC \uC8FC\uB9D0\uC5D0 \uBCFC \uB9CC\uD55C \uC601\uD654
+      \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uC774\uBC88 \uC8FC \uC8FC\uB9D0\uC5D0 \uBCFC \uB9CC\uD55C
+      \uC601\uD654\uB85C\uB294 \uC561\uC158 \uC601\uD654\uB098 \uB85C\uB9E8\uD2F1
+      \uCF54\uBBF8\uB514, \uC544\uB2C8\uBA74 \uC2A4\uB9B4\uB7EC \uC601\uD654 \uAC19\uC740
+      \uAC74 \uC5B4\uB5A0\uC138\uC694? \uC608\uB97C \uB4E4\uC5B4, \uCD5C\uADFC \uAC1C\uBD09\uD55C
+      \uC561\uC158 \uC601\uD654\uB098 \uD074\uB798\uC2DD\uD55C \uB85C\uB9E8\uD2F1
+      \uCF54\uBBF8\uB514, \uB610\uB294 \uAE34\uC7A5\uAC10 \uB118\uCE58\uB294 \uC2A4\uB9B4\uB7EC
+      \uC601\uD654\uAC00 \uC88B\uC744 \uAC83 \uAC19\uC544\uC694."
+    virtualHumanQuestion: "\uC5EC\uAC00 \uC2DC\uAC04\uC5D0\uB294 \uBCF4\uD1B5 \uC5B4\uB5A4
+      \uD65C\uB3D9\uC744 \uD558\uC2DC\uB098\uC694?"
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.1
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 3.2
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 5
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 2.2
+  - userQuestion: "\uBD80\uC0B0\uC5D0\uC11C \uC5EC\uD589\uD560 \uB9CC\uD55C \uACF3
+      \uCD94\uCC9C\uD574\uC918"
+    virtualHumanAnswer: "\uBD80\uC0B0\uC5D0\uB294 \uC815\uB9D0 \uBA4B\uC9C4 \uACF3\uC774
+      \uB9CE\uC544\uC694. \uD574\uC6B4\uB300 \uD574\uC218\uC695\uC7A5\uC774\uB098
+      \uAC10\uCC9C\uBB38\uD654\uB9C8\uC744 \uAC19\uC740 \uACF3\uC740 \uC5B4\uB5A0\uC138\uC694?
+      \uC544\uB2C8\uBA74 \uD0DC\uC885\uB300\uB3C4 \uCD94\uCC9C\uB4DC\uB824\uC694."
+    virtualHumanQuestion: "\uC5EC\uD589\uC744 \uAC04\uB2E4\uBA74, \uAD6D\uB0B4\uC640
+      \uD574\uC678 \uC911 \uC5B4\uB514\uB97C \uC120\uD638\uD558\uC2DC\uB098\uC694?
+      \uC774\uC720\uAC00 \uAD81\uAE08\uD558\uB124\uC694."
+    virtualHumanAnswerGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 2.9
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 4.1
+    - word_or_phrase: 
+      gesture: Lengthy_Head_Nod
+      start: 7.4
+    virtualHumanQuestionGestures:
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 0
+    - word_or_phrase: 
+      gesture: Head_Tilt
+      start: 1.4
+    - word_or_phrase: 
+      gesture: Head_Nod
+      start: 2.4
+    - word_or_phrase: 
+      gesture: Thoughtful_Head_Nod
+      start: 4.2
