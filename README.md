@@ -96,9 +96,51 @@ LLM을 이용해 지배적 행동과 순종적 행동을 표현하는 디지털 
 
 ## 7. 📹 소개 및 시연 영상
 
-추가 예정
+[![14_NotHuman_Video](http://img.youtube.com/vi/r3TJZwKrCik/0.jpg)](https://youtu.be/r3TJZwKrCik)
 
 ## 8. 🛠️ 설치 및 사용법
 
-본 프로젝트는 유료 에셋이 포함되어 있어, 비공개하였습니다.
-비굥개 예정
+### 1. 환경 설정
+
+1. **API 키 설정**
+  - **OpenAI API Key**: `src/LangChain/.env` 파일을 열고, `OPENAI_API_KEY` 항목에 API 키를 입력하세요. API 키는 [OpenAI API 키 생성 페이지](https://platform.openai.com/settings/organization/api-keys)에서 생성할 수 있습니다.
+  - **CLOVA Voice API**: `CLIENT_ID`와 `CLIENT_SECRET` 항목을 입력하세요. CLOVA Voice API는 [Naver Cloud Guide](https://guide.ncloud-docs.com/docs/clovavoice-start)에서 신청하여 생성할 수 있습니다.
+
+2. **Unity 프로젝트 설정**
+  - Unity 2022.3.10f1 버전을 다운로드하고 `src/UnityProject/DominanceAnalysis`를 열어 프로젝트를 불러옵니다.
+
+3. **Google Cloud API 설정**
+  - [Google Cloud Console](https://console.cloud.google.com/)에 접속하여 API 키를 생성합니다.
+  - **API 및 서비스 - 라이브러리**에서 **Cloud Speech-to-Text API**와 **Cloud Text-to-Speech API**를 검색하고 활성화합니다.
+
+4. **Google Cloud API 키 적용**
+  - **GCSpeechRecognition** 및 **GCTextToSpeech** 프리팹을 찾아 Inspector의 Api Key 필드에 생성한 키를 입력합니다.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5597cae-e181-4977-8bcf-89a5528d7b51" width="45%" />
+  <img src="https://github.com/user-attachments/assets/faff47b7-292e-414c-9447-4b0d927f05c9" width="45%" />
+</p>
+
+5. **Avatar 에셋 임포트**
+  - 'src/UnityProject/Avatar.zip' 파일을 압축 해제하여 'Avatar.unitypackage' 파일을 얻습니다.
+  - 유니티 프로젝트가 켜진 상태에서, 해당 파일을 실행하여 임포트합니다.
+![Avatar_asset_import](https://github.com/user-attachments/assets/f25e1b5d-c793-4026-95ba-d3f654ed1162)
+
+### 2. 실행 및 모드 선택
+
+1. **유니티 플레이**
+  - 플레이하면 CMD 창이 켜지며 LangChain과 자동으로 연결됩니다.
+
+2. **모드 선택**
+<p>
+  <img src="https://github.com/user-attachments/assets/abb1c203-82bd-4be5-b716-aebcad56bace" width="80%" />
+</p>
+  - **실험 모드**와 **자동 모드** 중 하나를 선택합니다.
+   
+  - **실험 모드**:
+    - 실험 환경에서 사용하는 모드입니다. `P` 키를 통해 **질의응답 모드**와 **1분 발화 모드**를 토글할 수 있습니다.
+    - `Q/E` 키를 통해 디지털 휴먼을 불러옵니다.
+    - **질의응답 모드**: `0-9` 키를 사용해 원하는 대화/행동 프리셋을 불러오고, 대화 중 스페이스바를 누른 상태에서 말할 수 있습니다.
+    - **1분 발화 모드**: `0-9` 키를 눌러 1분 동안 대화/제스처를 재생합니다.
+
+  - **자동 모드**:
+    - 모든 대화와 제스처가 자동으로 생성되는 모드입니다. 대화 중 스페이스바를 누른 상태에서 말할 수 있습니다.
