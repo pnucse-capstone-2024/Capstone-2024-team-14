@@ -1,205 +1,146 @@
-# Template for Capstone
-이 레파지토리는 학생들이 캡스톤 프로젝트 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. 레파지토리 제출 
-4. README.md 가이드라인
-5. README.md 작성팁
+## 1. 📄 프로젝트 소개
 
----
+### 1.1. 🪶 개요
+LLM을 디지털 휴먼에 적용함으로써, 디지털 휴먼은 더 자연스럽고 의미 있는 대화를 생성할 수 있으며, 성격적 특성을 반영하여 상호작용할 수 있습니다. 디지털 휴먼은 언어적 응답 외에도 다양한 비언어적 요소(목소리 톤, 제스처, 시선)를 통해 사용자와 상호작용할 수 있습니다. 본 프로젝트는 대인관계 원형모델에 따라 디지털 휴먼이 지배적 또는 순종적 성향을 나타낼 수 있음을 연구하고, 그에 따른 사용자 인지 변화를 분석하는 것을 목표로 합니다.
 
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/NJK_cPkH](https://classroom.github.com/a/NJK_cPkH)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
-<img src="https://github.com/user-attachments/assets/b5a7f34a-e146-4253-b57d-672737a75a50" alt="깃헙 클래스룸 레포 생성" width="600" />
+### 1.2. 🎯 목표
+LLM을 이용해 지배적 행동과 순종적 행동을 표현하는 디지털 휴먼을 통해 사용자가 이러한 성격적 특성을 어떻게 인식하는지에 대한 이해를 높이고자 합니다.
 
-- 레포지토리 생성 시 팀명은 `TEAM-{조 번호}` 형식으로 생성하세요.
-- 예를 들어, 2024년도 3조의 팀명은 `TEAM-03` 입니다.
-- 이 경우 `Capstone2024-TEAM-03`이란 이름으로 레파지토리가 생성됩니다.
+## 2. 👥 팀 소개
 
----
+|이름|이메일|역할|
+|---|---|---|
+|이영진(팀장)|wnsgnswls1@pusan.ac.kr|- 유니티 내부 구현<br>- 랭체인 파트 보조<br>- 팀 계획/일정 수립|
+|조성환|rnrn213@pusan.ac.kr|- 랭체인 내부 구현<br>- LLM Few-shot Prompting에 사용할 데이터 전처리<br>- LLM으로부터 예비조사용 데이터 생성|
+|조주은|cje6407@pusan.ac.kr|- GENEA 데이터 영상화<br>- 예비조사 결과 데이터 분석|
 
-## 2. 레파지토리 구성
-- 레파지토리 내에 README.md 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 README.md 파일을 작성하세요. (이 레파지토리의 SAMPLE_README.md 참조)
-- 레파지토리 내에 docs 디렉토리를 생성하고 docs 디렉토리 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다. (이 레파지토리의 docs 디렉토리 참조)
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 디렉토리를 나누어 구성하세요.
+## 3. 🛠️ 시스템 구성도
 
----
+![시퀀스 다이어그램](https://github.com/user-attachments/assets/0682866c-0473-4384-a24a-a74e1b3086bd)
+<p align="center"><시퀀스 다이어그램></p>
 
-## 3. 레파지토리 제출 
+### 3.1. 🧑‍💻 시스템 구성 설명
+1. **유니티 환경에서의 캐릭터 관리**: VirtualHumanManager를 통해 각 캐릭터의 성격, 발화 및 제스처, 백채널 빈도 등이 관리됩니다.
+2. **LLM 기반 데이터 생성**: LLM을 사용해 주어진 성격 설명에 따라 대화와 제스처 데이터를 생성합니다.
+3. **실험 모드**: 실험(예비조사) 참가자는 각 캐릭터와 상호작용하며 성격적 차이를 경험합니다.
+4. **자동 모드**: 미리 준비된 대화/행동 프리셋없이 랭체인과의 통신을 통해, 실시간으로 상호작용합니다.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0ca3b0d1-a9a7-46cd-969d-3d7e3d82e61b" width="30%" />
+  <img src="https://github.com/user-attachments/assets/47c1cb13-34c2-445a-b72d-1a295b95603f" width="30%" />
+  <img src="https://github.com/user-attachments/assets/37453af7-dbdb-4181-9692-f325da5bc76d" width="30%" />
+</p>
 
-- **`[주의]` 레파지토리 제출**은 해당 레파지토리의 ownership을 **학과 계정**으로 넘기는 것이므로 되돌릴 수 없습니다.
-- **레파지토리 제출** 전, 더 이상 수정 사항이 없는지 다시 한번 확인하세요.
-- github 레파지토리에서 Settings > General > Danger zone > Transfer 클릭
-  <img src="https://github.com/user-attachments/assets/cb2361d4-e07e-4b5d-9116-aa80dddd8a8b" alt="소유주 변경 경로" width="500" />
-  
-- [ Specify an organization or username ]에 'PNUCSE'를 입력하고 확인 메세지를 입력하세요.
-  <img src="https://github.com/user-attachments/assets/7c63955d-dcfe-4ac3-bdb6-7d2620575f3a" alt="소유주 변경" width="400" />
+<p align="center"><각각 립싱크, 시선처리, 제스처를 구현한 사진></p>
 
----
+## 4. 🧪 연구 내용 및 제스처 생성 분석
 
-## 4. README.md 가이드 라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 5가지 항목이외에 프로젝트의 이해를 돕기 위한 내용을 추가해도 됩니다.
-- SAMPLE_README.md 이 단순한 형태의 예제이니 참고하세요.
+### 4.1. 📊 예비조사 설계
+본 연구에서는 LLM을 활용한 디지털 휴먼과 사용자가 상호작용하는 예비조사을 통해 성격적 특성을 인식하는 과정을 평가하였습니다. 각 디지털 휴먼은 지배적(dominant), 중립적(neutral), 순종적(submissive) 성격을 나타내며, 예비조사 참가자들은 이들 캐릭터와 상호작용하며 설문에 응답하였습니다. 
 
-```markdown
-### 1. 프로젝트 소개
-#### 1.1. 배경 및 필요성
-> 프로젝트를 실행하게 된 배경 및 필요성을 작성하세요.
+예비조사는 두 가지 상태에서 진행되었습니다:
+1. **음소거 상태**: 시각적 요소(제스처, 시선 등)만을 바탕으로 캐릭터의 성격을 평가.
+2. **음소거 해제 상태**: 청각적 요소(목소리 톤, 높낮이 등)가 추가된 상태에서 캐릭터의 성격을 평가.
 
-#### 1.2. 목표 및 주요 내용
-> 프로젝트의 목표 및 주요 내용을 작성하세요.
+### 4.2. 📊 예비조사 절차
+1. 참가자는 각 캐릭터와 1분 동안 상호작용한 후, 제시된 질문에 따라 캐릭터의 성격을 평가했습니다.
+2. 설문은 PA (자기확신/주장) 및 HI (비주장/소심) 관련 10개의 항목으로 구성되었으며, 각 항목은 5점 척도로 평가되었습니다.
+3. 동일한 질문 세트를 음소거 상태와 음소거 해제 상태에서 각각 응답하도록 하였습니다.
 
-### 2. 상세설계
-#### 2.1. 시스템 구성도
-> 시스템 구성도(infra, front, back등의 node 간의 관계)의 사진을 삽입하세요.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0d441679-6097-42b4-ae58-726ad2f3283f" width="60%"/>
+  <br>
+  <img src="https://github.com/user-attachments/assets/d13357a7-823b-484f-bca9-0907ed42379a" width="60%"/>
+  <br>
+  <구글 설문지 일부의 사진>
+</p>
 
-#### 2.1. 사용 기술
-> 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
-> 
-> ex) React.Js - React14, Node.js - v20.0.2
+### 4.3. 📊 설문 질문 예시
+- 자신만만하다 (1-5점)
+- 당당하다 (1-5점)
+- 주장적이다 (1-5점)
+- 추진력있다 (1-5점)
+- 자기확신이 있다 (1-5점)
+- 수동적이다 (1-5점)
+- 비주장적이다 (1-5점)
+- 자신없다 (1-5점)
+- 소심하다 (1-5점)
+- 유약하다 (1-5점)
 
-### 3. 설치 및 사용 방법
-> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
->
-> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+### 4.4. 📊 제스처 분석
+디지털 휴먼은 성격에 맞는 비언어적 요소(제스처, 시선, 목소리 톤 등)를 기반으로 상호작용합니다. 
 
-### 4. 소개 및 시연 영상
-> 프로젝트에 대한 소개와 시연 영상을 넣으세요.
+- **지배적 성격**: 더 큰 제스처와 빈번한 고개 끄덕임(Head_Nod), 강한 고개 흔들기(Head_Shake)를 사용하였으며, 특히 Sarcastic_Head_Nod와 Annoyed_Head_Shake는 지배적 성격에서만 나타났습니다.
+- **중립적 성격**: 상대적으로 균형 잡힌 제스처 사용.
+- **순종적 성격**: 작은 동작과 낮은 목소리 톤, 시선을 자주 피하는 행동을 보였습니다.
 
-### 5. 팀 소개
-> 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
-```
+## 5. 📈 예비조사 결과
 
-## 5. README.md 작성팁 
-* 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.  
-* 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
+1. **음소거 상태 결과**
+음소거 상태에서의 설문 분석 결과, 시각적 비언어적 요소가 캐릭터 성격 인식에 큰 영향을 미쳤으며, Low와 Mid, Low와 High 간의 차이가 통계적으로 유의미하였습니다. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5a79252-e0f3-4718-84ef-65a51b53d5ca" width="90%">
+</p>
 
-### 5.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-<br />
+2. **음소거 해제 상태 결과**
+음소거 해제 상태에서는 시각적 요소와 청각적 요소가 결합되었음에도 불구하고, 청각적 요소만의 효과는 상대적으로 미미했습니다. Mid와 High 그룹 간의 차이는 통계적으로 유의하지 않았습니다.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45be274d-19d9-41c8-91a5-6d8f9ff34ac7" width="90%">
+</p>
 
-### 5.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
+이는 미리 정해진 대본에 따라 모든 디지털 휴먼의 언어적 **dominance**가 동일하게 설정되었기 때문에, 음성이 포함된 영상에서는 청각적 요소의 지배성이 충분히 드러나지 않고 중화되었을 가능성이 존재합니다. 따라서 언어적 요소가 크게 작용하여 **청각적 요소의 차별성**이 나타나지 않았을 가능성이 있으며, 이는 행동만으로 보여줄 때보다 덜 유의한 결과로 이어졌다고 해석할 수 있습니다.
 
-### 5.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
+## 6. ✅ 결론
+이러한 결과를 통해, **시각적 비언어적 요소**가 사용자 인식에 미치는 영향이 청각적 요소보다 더 뚜렷하게 나타났으며, 특히 **지배적 성격**의 캐릭터는 제스처의 빈도와 강도에서 차별화되었습니다.
 
-* **Unordered List**
-```
-* 하나
-  * 둘
+더 자세한 진행/결과 내용은 **최종보고서** 파일을 통해 확인할 수 있습니다.
 
-+ 하나
-  + 둘
+## 7. 📹 소개 및 시연 영상
 
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
+[![14_NotHuman_Video](http://img.youtube.com/vi/r3TJZwKrCik/0.jpg)](https://youtu.be/r3TJZwKrCik)
 
-+ 하나
-  + 둘
+## 8. 🛠️ 설치 및 사용법
 
-- 하나
-  - 둘
-<br />
+### 1. 환경 설정
 
-### 5.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
+1. **API 키 설정**
+  - **OpenAI API Key**: `src/LangChain/.env` 파일을 열고, `OPENAI_API_KEY` 항목에 API 키를 입력하세요. API 키는 [OpenAI API 키 생성 페이지](https://platform.openai.com/settings/organization/api-keys)에서 생성할 수 있습니다.
+  - **CLOVA Voice API**: `CLIENT_ID`와 `CLIENT_SECRET` 항목을 입력하세요. CLOVA Voice API는 [Naver Cloud Guide](https://guide.ncloud-docs.com/docs/clovavoice-start)에서 신청하여 생성할 수 있습니다.
 
-단어 주석 "`" 이용
-"`Hello world`"
+2. **Unity 프로젝트 설정**
+  - Unity 2022.3.10f1 버전을 다운로드하고 `src/UnityProject/DominanceAnalysis`를 열어 프로젝트를 불러옵니다.
 
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
+3. **Google Cloud API 설정**
+  - [Google Cloud Console](https://console.cloud.google.com/)에 접속하여 API 키를 생성합니다.
+  - **API 및 서비스 - 라이브러리**에서 **Cloud Speech-to-Text API**와 **Cloud Text-to-Speech API**를 검색하고 활성화합니다.
 
-### 5.5. 링크 Link
-```
-[Title](link)
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
+4. **Google Cloud API 키 적용**
+  - **GCSpeechRecognition** 및 **GCTextToSpeech** 프리팹을 찾아 Inspector의 Api Key 필드에 생성한 키를 입력합니다.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5597cae-e181-4977-8bcf-89a5528d7b51" width="45%" />
+  <img src="https://github.com/user-attachments/assets/faff47b7-292e-414c-9447-4b0d927f05c9" width="45%" />
+</p>
 
-<link>
-<https://cse.pusan.ac.kr/cse/index..do>
-``` 
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
+5. **Avatar 에셋 임포트**
+  - 'src/UnityProject/Avatar.zip' 파일을 압축 해제하여 'Avatar.unitypackage' 파일을 얻습니다.
+  - 유니티 프로젝트가 켜진 상태에서, 해당 파일을 실행하여 임포트합니다.
+![Avatar_asset_import](https://github.com/user-attachments/assets/f25e1b5d-c793-4026-95ba-d3f654ed1162)
 
-<https://cse.pusan.ac.kr/cse/index..do>
-<br />
+### 2. 실행 및 모드 선택
 
-### 5.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
+1. **유니티 플레이**
+  - 플레이하면 CMD 창이 켜지며 LangChain과 자동으로 연결됩니다.
 
-### 5.7. 이미지 Image
-```
-<img src="image URL" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](image URL "Optional title")
-```
-- 웹에서 작성한다면 README.md 내용 안으로 이미지를 드래그 앤 드롭하면 이미지가 생성됩니다.
-- 웹이 아닌 로컬에서 작성한다면, github issue에 이미지를 드래그 앤 드롭하여 image url 을 얻을 수 있습니다. (URL만 복사하고 issue는 제출 안 함.)
-  <img src="https://github.com/user-attachments/assets/0fe3bff1-7a2b-4df3-b230-cac4ef5f6d0b" alt="이슈에 image 올림" width="600" />
-  <img src="https://github.com/user-attachments/assets/251c6d42-b36b-4ad4-9cfa-fa2cc67a9a50" alt="image url 복사" width="600" />
+2. **모드 선택**
+<p>
+  <img src="https://github.com/user-attachments/assets/abb1c203-82bd-4be5-b716-aebcad56bace" width="80%" />
+</p>
+  - **실험 모드**와 **자동 모드** 중 하나를 선택합니다.
+   
+  - **실험 모드**:
+    - 실험 환경에서 사용하는 모드입니다. `P` 키를 통해 **질의응답 모드**와 **1분 발화 모드**를 토글할 수 있습니다.
+    - `Q/E` 키를 통해 디지털 휴먼을 불러옵니다.
+    - **질의응답 모드**: `0-9` 키를 사용해 원하는 대화/행동 프리셋을 불러오고, 대화 중 스페이스바를 누른 상태에서 말할 수 있습니다.
+    - **1분 발화 모드**: `0-9` 키를 눌러 1분 동안 대화/제스처를 재생합니다.
 
-
-### 5.8. 유튜브 영상 추가
-```markdown
-[![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-```
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-
-- 이때 유튜브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
-
-- `Youtube URL`: https://www.youtube.com/watch?v={동영상 ID}
-- `Youtube Thumbnail URL`: http://img.youtube.com/vi/{동영상 ID}/0.jpg 
-- 예를 들어, https://www.youtube.com/watch?v=zh_gQ_lmLqE 라고 하면 썸네일의 주소는 http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg 이다.
-
+  - **자동 모드**:
+    - 모든 대화와 제스처가 자동으로 생성되는 모드입니다. 대화 중 스페이스바를 누른 상태에서 말할 수 있습니다.
